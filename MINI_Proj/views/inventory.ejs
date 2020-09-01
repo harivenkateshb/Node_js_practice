@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="/assets/stylec.css">
+
+</head>
+<body>
+    <%- include('partials/nave') -%>
+    <h1 style="text-justify: auto;"> Inventory Section</h1>
+    <form id="check-inventory" method="POST" action="/inventory">
+        <label for="producttype">Specify your product type</label>
+        <input type="text" name="pt" value=<%=qp.pt%>>
+        <label for="productname">Specify your Product name</label>
+        <input type="text" name="pn"value=<%=qp.pn%> >
+        <input type="submit" value="click ME">
+
+    </form>
+</body>
+
+
+</html>

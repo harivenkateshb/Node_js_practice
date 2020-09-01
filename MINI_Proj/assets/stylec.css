@@ -1,0 +1,13 @@
+body{
+    background-color:skyblue;
+    color: black;
+    text-align: center;
+
+}
+ul{
+    text-align: left;
+    float: left;
+}
+li{
+    align-content: center;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/assets/stylec.css">
+</head>
+<body>
+    <%- include('partials/nave') -%>
+    <h1>Order Id is <%= id%></h1>
+    <p>Ordered Item: <strong><%=data.Productname%></strong></p>
+    <p>Cost is: <strong><%=data.Cost%></strong></p>
+    <ul>
+        <% data.specifications.forEach(function(item){ %>
+            <li><%=item%></li>
+        <%}) %>
+    </ul>
+</body>
+</html>
